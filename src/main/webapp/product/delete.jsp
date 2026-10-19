@@ -1,0 +1,2 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><title>Xóa sản phẩm</title></head><body><h2>Xác nhận xóa</h2><p>${product.name}</p><form action="${pageContext.request.contextPath}/products?action=delete" method="post"><input type="hidden" name="id" value="${product.id}"><button>Xóa</button></form><a href="${pageContext.request.contextPath}/products">Hủy</a></body></html>
